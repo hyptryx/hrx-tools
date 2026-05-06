@@ -7,112 +7,74 @@
 
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: #ffffff;
-            color: #3a2a5e;
+            font-family: Arial, sans-serif;
+            background: #05030a;
+            color: #ffffff;
             text-align: center;
+            padding-top: 80px;
         }
 
-        /* Smooth Fade-In */
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 1.2s ease forwards;
-        }
-        @keyframes fadeIn {
-            to { opacity: 1; }
-        }
-
-        /* Floating Animation */
-        .float {
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
-            100% { transform: translateY(0); }
-        }
-
-        /* Logo */
-        .logo {
-            width: 180px;
-            margin-top: 60px;
-            margin-bottom: 20px;
-            filter: drop-shadow(0 0 12px rgba(106, 13, 173, 0.35));
-        }
-
-        /* Header */
         h1 {
-            font-size: 42px;
-            margin-top: 10px;
-            color: #6a0dad;
-            text-shadow: 0 0 12px rgba(106, 13, 173, 0.25);
+            color: #e0b3ff;
+            font-size: 36px;
+            margin-bottom: 10px;
         }
 
         p.subtitle {
+            color: #bfa3ff;
             font-size: 18px;
-            color: #7d5bbd;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
 
-        /* Button Container */
-        .button-row {
+        .btn-container {
             display: flex;
             justify-content: center;
             gap: 30px;
             flex-wrap: wrap;
-            margin-top: 20px;
         }
 
-        /* HRX Button Style */
-        .hrx-btn {
+        .btn {
             display: inline-block;
             background: linear-gradient(135deg, #6a0dad, #9b4dff);
             color: white;
             padding: 18px 32px;
-            border-radius: 14px;
+            border-radius: 12px;
             font-size: 20px;
             text-decoration: none;
-            transition: 0.25s;
+            transition: 0.2s;
             box-shadow: 0 0 18px rgba(155, 77, 255, 0.5);
-            transform: translateY(0);
+            min-width: 240px;
         }
 
-        .hrx-btn:hover {
+        .btn:hover {
             background: linear-gradient(135deg, #9b4dff, #c07dff);
-            transform: translateY(-4px) scale(1.03);
+            transform: scale(1.05);
             box-shadow: 0 0 26px rgba(192, 125, 255, 0.8);
         }
 
-        /* Footer */
         .footer {
-            margin-top: 80px;
-            font-size: 14px;
-            color: #9c8ac7;
+            margin-top: 60px;
+            font-size: 13px;
+            color: #7f6ca8;
         }
     </style>
 </head>
-
 <body>
 
-    <!-- ⭐ HRX LOGO -->
-    <img src="hrxlogo.png" alt="HRX Logo" class="logo fade-in float">
+    <h1>HRX Creator Network – Tools</h1>
+    <p class="subtitle">Wähle dein Tool:</p>
 
-    <h1 class="fade-in">HRX Creator Network</h1>
-    <p class="subtitle fade-in">Wähle dein Tool</p>
-
-    <div class="button-row fade-in float">
-        <a class="hrx-btn" href="https://hyptryx.github.io/hrx-ambassador/">
-            👑 Ambassador Tool
+    <div class="btn-container">
+        <a class="btn" href="https://hyptryx.github.io/hrx-ambassador/">
+            Ambassador Tool
         </a>
 
-        <a class="hrx-btn" href="https://hyptryx.github.io/support-tracker/">
-            📊 Support Tracker
+        <a class="btn" href="https://hyptryx.github.io/support-tracker/">
+            Support Tracker
         </a>
     </div>
 
-    <div class="footer fade-in">
+    <div class="footer">
         HRX • ShadowPhoenix • HyptryX
     </div>
 
